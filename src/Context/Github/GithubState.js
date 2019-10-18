@@ -21,7 +21,6 @@ const GithubState = props => {
   const [state, dispatch] = useReducer(GithubReducer, initialState);
 
   // Search Users
-
   const searchUsers = async text => {
     setLoading();
 
@@ -31,7 +30,7 @@ const GithubState = props => {
 
     dispatch({
       type: SEARCH_USERS,
-      payload: res.data
+      payload: res.data.items
     });
   };
 

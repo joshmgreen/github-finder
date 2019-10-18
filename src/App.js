@@ -7,9 +7,10 @@ import Search from './Components/users/Search';
 import Alert from './Components/Layout/Alert';
 import About from './Components/pages/About';
 import axios from 'axios';
-import './App.css';
 
 import GithubState from './Context/Github/GithubState';
+
+import './App.css';
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -74,7 +75,7 @@ const App = () => {
                       showClear={users.length > 0 ? true : false}
                       setAlert={showAlert}
                     />
-                    <Users loading={loading} users={users} />
+                    <Users />
                   </Fragment>
                 )}
               />
