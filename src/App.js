@@ -4,7 +4,7 @@ import Navbar from './Components/Layout/Navbar';
 import User from './Components/users/User';
 import Alert from './Components/Layout/Alert';
 import About from './Components/pages/About';
-
+import Home from './Components/pages/Home';
 import GithubState from './Context/Github/GithubState';
 import AlertState from './Context/Alert/AlertState';
 
@@ -20,16 +20,7 @@ const App = () => {
             <div className='container'>
               <Alert />
               <Switch>
-                <Route
-                  exact
-                  path='/'
-                  render={props => (
-                    <Fragment>
-                      <Search />
-                      <Users />
-                    </Fragment>
-                  )}
-                />
+                <Route exact path='/' component={Home} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/user/:login' component={User} />
               </Switch>
