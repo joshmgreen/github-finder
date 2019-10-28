@@ -1,3 +1,5 @@
+Visit the site here: [Github Finder](https://githubfinder10212019.netlify.com/).
+
 This project is part of a React course developed by Brad Traversy hosted on Udemy. The Github Finder tool allows you to search for a user Github by username and view their hiring status, blog, bio, websites, avatar, and 5 most recent repositories. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
